@@ -60,6 +60,7 @@ gulp.task('scripts', function() {
             // 'js/tab.js',
             // 'js/affix.js',
             'js/main.js'
+            // 'js/jquery-ui.min.js'
         ])
         .pipe(concat('scripts.js'))
         .pipe(bytediff.start())
