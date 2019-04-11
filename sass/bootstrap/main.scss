@@ -32,6 +32,9 @@ html {
   position: relative;
   perspective: 2000px;
   z-index: 3;
+  position: fixed;
+  bottom: 20%;
+  left: 5%;
   .album-cover {
     position: absolute;
     transform-style: preserve-3d;
@@ -66,6 +69,15 @@ html {
   background: transparent;
   font-size: 100%;
   z-index: 4;
+  //expermiemtnal
+  perspective: 800px;
+position: absolute;
+width: 20%;
+right: 5%;
+height: 100%;
+background: 0 0;
+font-size: 100%;
+z-index: 4;
 }
 .face {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
@@ -188,6 +200,8 @@ html {
 
 .player {
   width: 100vw;
+  position: fixed;
+  bottom: 0;
   margin-top: 4rem;
   z-index: 1;
 }

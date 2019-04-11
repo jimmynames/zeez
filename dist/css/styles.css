@@ -5581,7 +5581,10 @@ html {
   height: 500px;
   position: relative;
   perspective: 2000px;
-  z-index: 3; }
+  z-index: 3;
+  position: fixed;
+  bottom: 20%;
+  left: 5%; }
   .wrapper .album-cover {
     position: absolute;
     transform-style: preserve-3d;
@@ -5609,6 +5612,14 @@ html {
   width: 100%;
   height: 100%;
   background: transparent;
+  font-size: 100%;
+  z-index: 4;
+  perspective: 800px;
+  position: absolute;
+  width: 20%;
+  right: 5%;
+  height: 100%;
+  background: 0 0;
   font-size: 100%;
   z-index: 4; }
 
@@ -5727,6 +5738,8 @@ html {
 
 .player {
   width: 100vw;
+  position: fixed;
+  bottom: 0;
   margin-top: 4rem;
   z-index: 1; }
 
