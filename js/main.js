@@ -13,15 +13,28 @@
 
   const myVivus = new Vivus('zeez-svg');
     myVivus.play(0.4, function() {
-      $('.preloader').addClass('loaded')
+      $('body').addClass('loaded')
+      setTimeout(function () {
+        $('.background').addClass('background--active')
+      }, 1600)
       // called after the animation completes
     });
 
-    $( function() {
-    $( "#tridiv" ).draggable();
-  } );
+  $(function () {
+    $('#tridiv').draggable({
+      // appendTo: "body",
+      // containment: 'window'
 
-  $('.background').addClass('background--active')
+      // greedy: true,
+    })
+  })
+
+
+
+  setTimeout(function () {
+          $('.modal .close-modal').addClass('close-modal--active')
+  }, 1600)
+
   $('.album-cover').on('click', function (event) {
     $('.album-cover').toggleClass('flipped')
   })
