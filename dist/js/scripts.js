@@ -9,8 +9,8 @@
   })
 
   var colours = [
-    ['#362C49', '#000000'],
-    ['#0E1512', '#411E32']
+    ['#C1B9F8', '#F0EAF5'],
+    ['#CDAEF6', '#E9E3F1']
   ]
 
   function hex2rgb(hex) {
