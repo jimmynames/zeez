@@ -57,6 +57,40 @@ html {
     }
   }
 }
+.album-text-wrapper {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: flex-end;
+    align-content: center;
+    padding-bottom: 16%;
+    a {
+      text-decoration: none;
+      transition: all .3s ease;
+      &:hover {
+        cursor: pointer;
+        color: black;
+      }
+    }
+}
+
+.album-text--hover {
+  font-family: 'Audiowide', cursive !important;
+  font-size: 18px;
+  // left: 39%;
+}
+
+.album-text {
+  text-transform: uppercase;
+  font-family: 'Libre Barcode 39', cursive;
+  transition: all .3s ease;
+  color: #d7d7d7;
+}
 
 .flipped {
   transform: rotateY( 180deg );
@@ -256,7 +290,7 @@ z-index: 4;
   position: absolute;
   z-index: 10;
   background: black;
-  transition: all 0.7s ease;
+  transition: all 1s ease;
   svg {
     #Artboard {
       stroke: #d7d7d7d7;

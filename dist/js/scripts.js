@@ -31,9 +31,16 @@
     $('.album-cover').toggleClass('flipped')
   })
 
+  $('.album-text-wrapper').hover(function(){
+   $(this).find('.album-text').addClass('album-text--hover');
+   }, function(){
+     // $(this).removeClass('hovered');
+     console.log('off')
+  });
+
   var colours = [
-    ['#C1B9F8', '#F0EAF5'],
-    ['#CDAEF6', '#E9E3F1']
+    ['#C1B9F8', '#0E1221'],
+    ['#CDAEF6', '#2B3038']
   ]
 
   function hex2rgb(hex) {

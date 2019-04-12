@@ -5603,6 +5603,39 @@ html {
     .wrapper .album-cover .back {
       transform: rotateY(180deg); }
 
+.album-text-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-bottom: 16%; }
+  .album-text-wrapper a {
+    text-decoration: none;
+    transition: all .3s ease; }
+    .album-text-wrapper a:hover {
+      cursor: pointer;
+      color: black; }
+
+.album-text--hover {
+  font-family: 'Audiowide', cursive !important;
+  font-size: 18px; }
+
+.album-text {
+  text-transform: uppercase;
+  font-family: 'Libre Barcode 39', cursive;
+  transition: all .3s ease;
+  color: #d7d7d7; }
+
 .flipped {
   transform: rotateY(180deg); }
 
@@ -5790,7 +5823,7 @@ html {
   position: absolute;
   z-index: 10;
   background: black;
-  transition: all 0.7s ease; }
+  transition: all 1s ease; }
   .watermark svg #Artboard,
   .preloader svg #Artboard {
     stroke: #d7d7d7d7;
