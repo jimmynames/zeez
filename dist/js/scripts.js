@@ -15,19 +15,24 @@
       $('body').addClass('loaded')
       setTimeout(function () {
         $('.background').addClass('background--active')
-      }, 1600)
+      }, 3600)
       setTimeout(function () {
         $('.wrapper').addClass('wrapper--active')
       }, 2400)
       setTimeout(function () {
         $('#tridiv').addClass('tridiv--active')
-      }, 4500)
+      }, 5500)
       // called after the animation completes
     });
 
   $(document).ready(function () {
     $('#tridiv').draggable()
   })
+
+
+  setTimeout(function () {
+    $('.svg-pointer').addClass('svg-pointer--active')
+  }, 8500)
 
   // setTimeout(function () {
   //         $('.modal .close-modal').addClass('close-modal--active')

@@ -5557,6 +5557,21 @@ html, body {
 html {
   background: black; }
 
+.svg-pointer {
+  opacity: 0;
+  transition: all 1s ease;
+  position: absolute;
+  transform: rotate(-270deg);
+  top: 40%;
+  right: 0;
+  right: -11%; }
+  .svg-pointer:hover #mask-2, .svg-pointer:hover #mask-4 {
+    fill: black;
+    transition: all .3s ease; }
+
+.svg-pointer--active {
+  opacity: 1; }
+
 .container {
   display: -ms-flexbox;
   display: flex;
@@ -5568,6 +5583,7 @@ html {
       flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative !important;
   height: 100%;
   width: 100%; }
 
@@ -5577,7 +5593,7 @@ html {
 
 .wrapper {
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 3s ease;
   width: 100%;
   max-width: 500px;
   height: 500px;
@@ -5874,4 +5890,8 @@ html {
   .watermark {
     -ms-flex-align: end;
         align-items: flex-end;
-    padding-bottom: 10rem; } }
+    padding-bottom: 10rem; }
+
+  .svg-pointer {
+    top: 31%;
+    right: -3.5%; } }
