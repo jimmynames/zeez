@@ -5807,7 +5807,7 @@ html {
 .loaded .background {
   opacity: 0.8; }
 
-@media (max-width: 600px) {
+@media (max-width: 668px) {
   html, body {
     overflow: hidden; }
 
@@ -5815,7 +5815,7 @@ html {
     width: 100%;
     position: relative;
     top: initial;
-    bottom: initial;
+    bottom: 15%;
     left: initial;
     height: 350px; }
 
@@ -5824,4 +5824,9 @@ html {
     width: 100%;
     right: initial;
     bottom: 32%;
-    left: initial; } }
+    left: initial; }
+
+  .watermark {
+    -ms-flex-align: end;
+        align-items: flex-end;
+    padding-bottom: 10rem; } }

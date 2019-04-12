@@ -282,7 +282,7 @@ z-index: 4;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 668px) {
   html, body {
     overflow: hidden;
   }
@@ -290,7 +290,7 @@ z-index: 4;
     width: 100%;
     position: relative;
     top: initial;
-    bottom: initial;
+    bottom: 15%;
     left: initial;
     height: 350px;
   }
@@ -300,6 +300,9 @@ z-index: 4;
     right: initial;
     bottom: 32%;
     left: initial
-
+  }
+  .watermark {
+    align-items: flex-end;
+    padding-bottom: 10rem;
   }
 }
