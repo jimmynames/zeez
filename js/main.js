@@ -1,6 +1,5 @@
 /* global jQuery olark localStorage gtag */
 // eslint-disable-next-line no-unused-vars
-
 (function ($) {
   console.log('Spinning ⚙️')
 
