@@ -16,6 +16,12 @@
       setTimeout(function () {
         $('.background').addClass('background--active')
       }, 1600)
+      setTimeout(function () {
+        $('.wrapper').addClass('wrapper--active')
+      }, 2400)
+      setTimeout(function () {
+        $('#tridiv').addClass('tridiv--active')
+      }, 4500)
       // called after the animation completes
     });
 
@@ -23,9 +29,9 @@
     $('#tridiv').draggable()
   })
 
-  setTimeout(function () {
-          $('.modal .close-modal').addClass('close-modal--active')
-  }, 1600)
+  // setTimeout(function () {
+  //         $('.modal .close-modal').addClass('close-modal--active')
+  // }, 1600)
 
   $('.album-cover').on('click', function (event) {
     $('.album-cover').toggleClass('flipped')
@@ -39,7 +45,7 @@
   });
 
   var colours = [
-    ['#C1B9F8', '#0E1221'],
+    ['#121520', '#0E1221'],
     ['#CDAEF6', '#2B3038']
   ]
 

@@ -5576,6 +5576,8 @@ html {
   height: 100%; }
 
 .wrapper {
+  opacity: 0;
+  transition: all 1s ease;
   width: 100%;
   max-width: 500px;
   height: 500px;
@@ -5603,6 +5605,9 @@ html {
     .wrapper .album-cover .back {
       transform: rotateY(180deg); }
 
+.wrapper--active {
+  opacity: 1; }
+
 .album-text-wrapper {
   position: absolute;
   bottom: 0;
@@ -5625,6 +5630,8 @@ html {
     .album-text-wrapper a:hover {
       cursor: pointer;
       color: black; }
+  .album-text-wrapper:hover {
+    cursor: pointer; }
 
 .album-text--hover {
   font-family: 'Audiowide', cursive !important;
@@ -5639,8 +5646,13 @@ html {
 .flipped {
   transform: rotateY(180deg); }
 
+.tridiv--active {
+  opacity: 1 !important; }
+
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
 #tridiv {
+  opacity: 0;
+  transition: opacity 2s ease;
   perspective: 800px;
   position: absolute;
   overflow: hidden;
