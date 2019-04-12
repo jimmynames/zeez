@@ -21,13 +21,7 @@
     });
 
   $(function () {
-    $('#tridiv').draggable({
-      // appendTo: "body",
-      // containment: 'window'
-      // containment: 'window',
-      // scroll: false
-      // greedy: true,
-    })
+    $('#tridiv').draggable({})
   })
 
   setTimeout(function () {
