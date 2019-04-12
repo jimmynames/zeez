@@ -24,12 +24,11 @@
     $('#tridiv').draggable({
       // appendTo: "body",
       // containment: 'window'
-
+      // containment: 'window',
+      // scroll: false
       // greedy: true,
     })
   })
-
-
 
   setTimeout(function () {
           $('.modal .close-modal').addClass('close-modal--active')
