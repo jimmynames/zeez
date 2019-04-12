@@ -5894,4 +5894,5 @@ html {
 
   .svg-pointer {
     top: 31%;
-    right: -3.5%; } }
+    right: -3.5%;
+    display: none; } }
