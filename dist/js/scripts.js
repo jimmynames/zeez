@@ -20,9 +20,7 @@
       // called after the animation completes
     });
 
-  $(function () {
-    $('#tridiv').draggable({})
-  })
+  $('#tridiv').draggable()
 
   setTimeout(function () {
           $('.modal .close-modal').addClass('close-modal--active')
