@@ -3,6 +3,24 @@
 
 (function ($) {
   console.log('Spinning ⚙️')
+
+  // const myCallback = function () {
+  //   console.log('callback fired')
+  //   $('.preloader').addClass('loaded')
+  // }
+
+  // new Vivus('zeez-svg', {duration: 200});
+
+  const myVivus = new Vivus('zeez-svg');
+    myVivus.play(0.4, function() {
+      $('.preloader').addClass('loaded')
+      // called after the animation completes
+    });
+
+    $( function() {
+    $( "#tridiv" ).draggable();
+  } );
+
   $('.background').addClass('background--active')
   $('.album-cover').on('click', function (event) {
     $('.album-cover').toggleClass('flipped')

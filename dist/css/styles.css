@@ -5775,3 +5775,23 @@ html {
   .video-wrapper .video {
     height: 345px;
     width: 100%; }
+
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  z-index: 10;
+  background: white;
+  transition: all .6s ease; }
+  .preloader svg #Artboard {
+    stroke: black; }
+
+.loaded {
+  opacity: 0;
+  z-index: -1; }
