@@ -1,6 +1,7 @@
 /* global jQuery olark localStorage gtag */
 // eslint-disable-next-line no-unused-vars
 (function ($) {
+  $('#zeez-svg').addClass('show')
   console.log('Spinning ⚙️')
 
   // const myCallback = function () {
@@ -9,7 +10,6 @@
   // }
 
   // new Vivus('zeez-svg', {duration: 200});
-
   const myVivus = new Vivus('zeez-svg');
     myVivus.play(0.4, function() {
       $('body').addClass('loaded')
