@@ -29,6 +29,14 @@
     $('#tridiv').draggable()
   })
 
+  $( ".player" ).hover(
+  function() {
+    $( this ).addClass( "hover" )
+  }, function() {
+    $( this ).removeClass( "hover" )
+  }
+);
+
 
   setTimeout(function () {
     $('.svg-pointer').addClass('svg-pointer--active')

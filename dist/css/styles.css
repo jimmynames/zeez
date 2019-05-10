@@ -5911,3 +5911,8 @@ html {
     top: 31%;
     right: -3.5%;
     display: none; } }
+.player {
+  transition: all .666s ease;
+  z-index: 4; }
+  .player.hover {
+    height: 420px; }

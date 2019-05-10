@@ -409,3 +409,11 @@ z-index: 4;
     display: none;
   }
 }
+
+.player {
+  transition: all .666s ease;
+  z-index: 4;
+  &.hover {
+    height: 420px;
+  }
+}
